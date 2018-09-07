@@ -1,0 +1,94 @@
+html, body {
+  font-family: Roboto, Arial, sans-serif;
+  line-height: 1.5em;
+  margin: 0;
+  padding: 0;
+  color: #333333;
+}
+
+h1 {
+  font-weight: 400;
+  word-wrap: break-word;
+  margin: 28px 0;
+}
+
+h2 {
+  margin-top: 40px;
+  margin-bottom: 20px;
+  font-weight: 600;
+  line-height: 1.25;
+  padding-bottom: 0.3em;
+  border-bottom: 1px solid #eaecef;
+}
+
+code {
+  padding: 0.2em 0.4em;
+  margin: 0;
+  background-color: #f6f8fa;
+  border-radius: 3px;
+}
+
+pre {
+  padding: 16px;
+  overflow: auto;
+  background-color: #f6f8fa;
+  border-radius: 3px;
+  white-space: normal;
+  line-height: 1.5em;
+
+  code {
+    padding: 0;
+  }
+
+  .code__comment {
+    display: block;
+    color: #6a737d;
+  }
+
+  .code__text {
+    display: block;
+  }
+}
+
+input {
+  padding: 8px;
+  border-radius: 3px;
+  border: 1px solid #dfe2e5;
+  font-size: 1em;
+}
+
+.app-header {
+  border-bottom: 1px solid #e6ebf1;
+  text-align: center;
+}
+
+.app-body {
+  padding: 40px 0;
+}
+
+.app-footer {
+  border-top: 1px solid #e6ebf1;
+  font-size: 0.85em;
+  padding: 20px 0;
+  text-align: center;
+  color: #6a737d;
+}
+
+.container {
+  margin: 0 auto;
+  padding: 0 20px;
+
+  @media (min-width: 600px) {
+    max-width: 600px;
+  }
+}
+
+.Formable {
+  padding: 20px;
+  border: 1px solid #dfe2e5;
+  border-radius: 3px;
+
+  .Formable__AdsContainer {
+    display: none;
+  }
+}
