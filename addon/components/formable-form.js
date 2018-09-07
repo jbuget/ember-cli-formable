@@ -4,6 +4,10 @@ import layout from '../templates/components/formable-form';
 export default Component.extend({
   layout,
 
+  // Element
+  classNames: ['formable-form'],
+
+  // Properties
   formId: 'formable-root',
   formKey: null,
 

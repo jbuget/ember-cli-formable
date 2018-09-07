@@ -88,7 +88,22 @@ input {
   border: 1px solid #dfe2e5;
   border-radius: 3px;
 
+  .Formable__TitleContainer {
+    margin-top: 0;
+
+    .Formable__Title {
+      line-height: 1.5em;
+      border-bottom: 1px dotted #eaecef;
+      padding-bottom: 0.3em;
+      margin-top: 0;
+    }
+  }
+
   .Formable__AdsContainer {
     display: none;
   }
+}
+
+.formable-form {
+  margin-bottom: 20px;
 }

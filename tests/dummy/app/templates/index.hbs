@@ -8,47 +8,37 @@
 
 <main class="app-body">
 
-  <section class="section-presentation">
+  <section class="section-single-form">
     <div class="container">
-      <p>This addon provides a component to easily integrate a <a href="https://getformable.com/">Formable</a> form.</p>
-    </div>
-  </section>
-
-  <section id="section-installation">
-    <div class="container">
-      <h2>Installation</h2>
-      <pre>ember install ember-cli-formable</pre>
-    </div>
-  </section>
-
-  <section id="section-usage">
-    <div class="container">
-      <h2>Usage</h2>
-
-      <p>If you have only one Formable form to integrate in your application, just use the <code>formable-form</code> (required) component and specify the property <code>formKey</code> as follows::</p>
+      <h2># Single form</h2>
+      <p>If you have only one Formable form to integrate in your application, just use the <code>formable-form</code> (required) component and specify the property <code>formKey</code>.</p>
+      <p>Code:</p>
       <pre>
         <code>
-          <span class="code__comment">// app/routes/index.hbs</span>
+          <span class="code__comment">// In your template</span>
           <span class="code__text">\{{formable-form formKey="14c50406-f195-451d-a93a-c206d3c13548"}}</span>
         </code>
       </pre>
-
-      <p>If you want to integrate multiple forms, you have to specify a DOM element ID for each form, with the component option <code>formId</code> as follows:</p>
-      <pre>
-        <code>
-          <span class="code__comment">// app/routes/index.hbs</span>
-          <span class="code__text">\{{formable-form formId="form-1" formKey="aaa-bbb-ccc"}}</span>
-          <span class="code__text">\{{formable-form formId="form-2" formKey="xxx-yyy-zzz"}}</span>
-        </code>
-      </pre>
-
+      <p>Result:</p>
+      {{formable-form formKey="14c50406-f195-451d-a93a-c206d3c13548"}}
     </div>
   </section>
 
-  <section id="section-demo">
+  <section class="section-multiple-forms">
     <div class="container">
-      <h2>Demo</h2>
-      {{formable-form formKey="14c50406-f195-451d-a93a-c206d3c13548"}}
+      <h2># Multiple forms</h2>
+      <p>If you want to integrate multiple forms, you have to specify a DOM element ID for each form, with the component option <code>formId</code>.</p>
+      <p>Code:</p>
+      <pre>
+        <code>
+          <span class="code__comment">// app/routes/index.hbs</span>
+          <span class="code__text">\{{formable-form formId="form-1" formKey="9b1f8cba-d6da-43d5-8857-49a0db107ebd"}}</span>
+          <span class="code__text">\{{formable-form formId="form-2" formKey="9844e023-d0e8-4179-9fda-760d295b3afe"}}</span>
+        </code>
+      </pre>
+      <p>Result:</p>
+      {{formable-form formId="form-1" formKey="9b1f8cba-d6da-43d5-8857-49a0db107ebd"}}
+      {{formable-form formId="form-2" formKey="9844e023-d0e8-4179-9fda-760d295b3afe"}}
     </div>
   </section>
 </main>
