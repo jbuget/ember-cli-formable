@@ -13,12 +13,15 @@ export default Component.extend({
 
   didInsertElement() {
     this._super(...arguments);
-    if (!window.formableForms) {
-      window.formableForms = [];
-    }
-    window.formableForms.push({
-      key: this.get('formKey'),
-      mountOn: `#${this.get('formId')}`
-    });
+    const formId= `#${this.get('formId')}`;
+    const formKey= this.get('formKey');
+    const scriptTag = '' +
+      '  if (!window.formableForms) { window.formableForms = []; }\n' +
+      '  window.formableForms.push({ key: "' + formKey + '", mountOn: "' + formId + '" });';
+
+    const script = document.createElement('script');
+    script.type  = 'text/javascript';
+    script.text  = scriptTag;
+    document.body.appendChild(script);
   }
 });

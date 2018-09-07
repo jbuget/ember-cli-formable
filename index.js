@@ -5,7 +5,7 @@ module.exports = {
 
   contentFor(type) {
     if (type === 'head') {
-      return '<script defer type="text/javascript" src="https://app.getformable.com/static/embed.js"></script>';
+      return '<script async type="text/javascript" src="https://app.getformable.com/static/embed.js"></script>';
     }
   }
 
