@@ -1,7 +1,7 @@
 ember-cli-formable
 ==============================================================================
 
-This addon provides a component to easily integrate a [Formable](https://getformable.com/) form.
+This addon provides a component to easily integrate one or multiple [Formable](https://getformable.com/) forms into an Ember CLI application.
 
 Installation
 ------------------------------------------------------------------------------
@@ -9,7 +9,6 @@ Installation
 ```
 ember install ember-cli-formable
 ```
-
 
 Usage
 ------------------------------------------------------------------------------
